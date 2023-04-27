@@ -10,7 +10,6 @@ body {
 
 :root {
   --title: rgb(81, 176, 239);
-  --stroke: rgb(30, 13, 101);
   --credits: rgb(0, 0, 0);
 }
 
@@ -68,7 +67,6 @@ section {
   width: 800px;
   position: absolute;
   right: 100px;
-  background-color: red;
 }
 
 .homme_qui_tombe_02 {
@@ -127,14 +125,14 @@ section {
 .ixy_paradis {
   position: absolute;
   width: 300px;
-  top: 1490vh;
+  top: 1620vh;
   left: 65vh;
 }
 
 .ixy_fin {
   position: absolute;
   width: 300px;
-  top: 1580vh;
+  top: 1700vh;
 }
 img {
   margin: 0;
