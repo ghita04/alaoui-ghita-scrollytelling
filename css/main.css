@@ -1,0 +1,340 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Sriracha", cursive;
+  margin: 0;
+}
+
+:root {
+  --title: rgb(81, 176, 239);
+  --stroke: rgb(30, 13, 101);
+  --credits: rgb(0, 0, 0);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-image: url(../images/svg/ciel.svg);
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+
+.title-first {
+  position: absolute;
+  top: -10vh;
+  font-size: 10vw;
+  position: absolute;
+  color: var(--title);
+  text-align: center;
+}
+
+.credits-bottom {
+  font-size: 1vw;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: var(--credits);
+  width: 900px;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.fantome_content {
+  position: absolute;
+  width: 250px;
+  height: 300px;
+  top: 260px;
+}
+
+.bi-chevron-double-down {
+  position: absolute;
+  z-index: 3;
+  top: 580px;
+}
+
+.homme_qui_tombe {
+  padding-top: 5vh;
+  width: 800px;
+  position: absolute;
+  right: 100px;
+  background-color: red;
+}
+
+.homme_qui_tombe_02 {
+  width: 600px;
+  position: absolute;
+  right: 100px;
+  top: 1150px;
+}
+
+.ixy_vole {
+  position: absolute;
+  left: 30vw;
+  width: 250px;
+  transform: rotate(20deg);
+}
+
+.ixy_feuille {
+  position: absolute;
+  width: 300px;
+  left: 60vw;
+  top: 590vh;
+  transform: rotate(-10deg);
+}
+
+.ixy_pierre {
+  position: absolute;
+  left: 33vw;
+  top: 820vh;
+}
+
+.ixy_chateau {
+  position: absolute;
+  left: 500px;
+  top: 3950px;
+}
+
+.roche {
+  position: absolute;
+  width: 100px;
+  left: 57vw;
+  top: 845vh;
+}
+
+.ixy_surpris {
+  position: absolute;
+  width: 10vw;
+  top: 1110vh;
+  left: 33vw;
+}
+
+.ixy_tresor {
+  position: absolute;
+  top: 1287.5vh;
+}
+
+.ixy_paradis {
+  position: absolute;
+  width: 300px;
+  top: 1490vh;
+  left: 65vh;
+}
+
+.ixy_fin {
+  position: absolute;
+  width: 300px;
+  top: 1580vh;
+}
+img {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+#chapitre1 {
+  background-image: url(../images/svg/homme_falaise.svg);
+  height: 130vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60% 100%;
+}
+
+#chapitre2 {
+  background-image: url(../images/svg/ixy_promene_paysage3.svg);
+  height: 130vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
+}
+
+#chapitre3 {
+  background-image: url(../images/svg/chemin_pierre_ixy_debut.svg);
+  height: 130vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
+}
+
+#chapitre4 {
+  background-image: url(../images/svg/paysage_chateau_ixy_milieu.svg);
+  height: 130vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
+}
+
+#chapitre4 {
+  background-image: url(../images/svg/paysage_chateau_ixy_milieu.svg);
+  height: 130vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
+}
+#chapitre5 {
+  background-image: url(../images/svg/paysage_sans_ixy.svg);
+  height: 130vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
+}
+
+#chapitre6 {
+  background-image: url(../images/svg/paysage_paradis_ixy_loin.svg);
+  height: 130vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
+}
+
+#fin {
+  background-image: url(../images/svg/ciel.svg);
+  height: 130vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.chapitre1 {
+  background-image: url(../images/svg/ciel.svg);
+  height: 130vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.chapitre2 {
+  background-image: url(../images/svg/ciel.svg);
+  height: 130vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.chapitre3 {
+  background-image: url(../images/svg/ciel.svg);
+  height: 130vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.chapitre4 {
+  background-image: url(../images/svg/ciel.svg);
+  height: 130vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.chapitre5 {
+  background-image: url(../images/svg/ciel.svg);
+  height: 130vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.chapitre6 {
+  background-image: url(../images/svg/ciel.svg);
+  height: 130vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.chapitre1 h1 {
+  font-size: 16vw;
+  position: absolute;
+  color: var(--title);
+  text-align: center;
+}
+
+.chapitre2 h1 {
+  font-size: 16vw;
+  position: absolute;
+  color: var(--title);
+  text-align: center;
+}
+
+.chapitre3 h1 {
+  font-size: 16vw;
+  position: absolute;
+  color: var(--title);
+  text-align: center;
+}
+
+.chapitre4 h1 {
+  font-size: 16vw;
+  position: absolute;
+  color: var(--title);
+  text-align: center;
+}
+
+.chapitre5 h1 {
+  font-size: 16vw;
+  position: absolute;
+  color: var(--title);
+  text-align: center;
+}
+
+.chapitre6 h1 {
+  font-size: 16vw;
+  position: absolute;
+  color: var(--title);
+  text-align: center;
+}
+
+#chapitre1 p {
+  position: absolute;
+  color: red;
+}
+
+#chapitre2 p {
+  position: absolute;
+  color: blue;
+}
+
+#chapitre3 p {
+  position: absolute;
+  color: blue;
+}
+
+#chapitre4 p {
+  position: absolute;
+  color: blue;
+}
+
+#chapitre5 p {
+  position: absolute;
+  color: blue;
+}
+
+#chapitre6 p {
+  position: absolute;
+  color: blue;
+}
