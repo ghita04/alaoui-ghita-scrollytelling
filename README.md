@@ -1,6 +1,6 @@
 # Projet Scrollytelling : La quête d'Ixy 
 
-# Projet scolaire dans le cadre du cours : Optimisation Web : [Projet Scrollytelling]([https://greensock.com/](https://tim-montmorency.com/timdoc/582-424MO/projet-scrollytelling/))
+# Projet scolaire dans le cadre du cours : Optimisation Web : [Projet Scrollytelling]([https://greensock.com/](https://tim-montmorency.com/timdoc/582-424MO/projet-scrollytelling/)
 # Conception :
 
 - Ghita Alaoui
