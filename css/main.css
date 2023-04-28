@@ -438,7 +438,7 @@ section p {
   }
 }
 
-.is-scrolling .ixy_marche {
+.is-scrolling .ixy_qui_marche {
   animation-play-state: running;
 }
 
@@ -463,6 +463,6 @@ section p {
   }
 }
 
-.is-scrolling .ixy_voler {
+.is-scrolling .ixy_qui_vole {
   animation-play-state: running;
 }
