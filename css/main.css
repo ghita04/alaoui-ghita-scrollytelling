@@ -136,6 +136,45 @@ section {
   transform: rotate(15deg);
 }
 
+.racine02 {
+  position: absolute;
+  width: 80vw;
+  right: -13vw;
+  top: 1060vh;
+  transform: rotate(30deg);
+}
+
+.racine_opposee02 {
+  position: absolute;
+  width: 80vw;
+  left: -7vw;
+  top: 1000vh;
+  transform: rotate(15deg);
+}
+
+.feuille_orange01 {
+  position: absolute;
+  width: 15vw;
+  left: 3vw;
+  transform: rotate(-17deg);
+}
+
+.feuille_orange02 {
+  position: absolute;
+  width: 18vw;
+  top: 1190vh;
+  left: 40vw;
+  transform: rotate(20deg);
+}
+
+.feuille_orange03 {
+  position: absolute;
+  width: 20vw;
+  top: 1219vh;
+  left: 70vw;
+  transform: rotate(-30deg);
+}
+
 .ixy_surpris {
   position: absolute;
   width: 10vw;
@@ -197,14 +236,10 @@ img {
   background-size: cover;
   background-position: 50% 100%;
 }
-
-#chapitre4 {
-  background-image: url(../images/svg/paysage_chateau_ixy_milieu.svg);
-  height: 130vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 100%;
+#chapitre4 p {
+  z-index: 3;
 }
+
 #chapitre5 {
   background-image: url(../images/svg/paysage_sans_ixy.svg);
   height: 130vh;
@@ -325,6 +360,7 @@ img {
   position: absolute;
   color: var(--title);
   text-align: center;
+  z-index: 3;
 }
 
 .chapitre6 h1 {
@@ -381,25 +417,51 @@ section p {
 }
 
 .spritesheet01 {
-  width: 90vw;
-  aspect-ratio: 1/1;
-  background-image: url(../images/png/spritesheet-fantome-ciel.png);
-  background-repeat: no-repeat;
-  animation-name: marche;
-  animation-duration: 1s;
+  position: absolute;
+  width: 300px;
+  background-image: url("../images/png/spritesheet-fantome-foret.png");
+  animation-name: ixy_qui_marche;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: steps(39);
+  animation-play-state: paused;
 }
 
-@keyframes marche {
+@keyframes ixy_qui_marche {
   from {
     background-position: 0 0;
   }
+
   to {
-    background-position: 3500px 0;
+    background-position: 20000px 0;
   }
 }
 
-.spritesheet01 {
-  margin: 0 auto;
+.is-scrolling .ixy_marche {
+  animation-play-state: running;
+}
+
+.spritesheet02 {
+  position: absolute;
+  width: 300px;
+  background-image: url("../images/png/spritesheet-fantome-ciel.png");
+  animation-name: ixy_qui_vole;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(39);
+  animation-play-state: paused;
+}
+
+@keyframes ixy_qui_vole {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -20000px 0;
+  }
+}
+
+.is-scrolling .ixy_voler {
+  animation-play-state: running;
 }

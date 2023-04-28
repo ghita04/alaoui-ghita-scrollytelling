@@ -1,5 +1,16 @@
 gsap.registerPlugin(ScrollTrigger);
 
+let body = document.querySelector("body");
+let timerScroll;
+
+window.addEventListener("scroll", function () {
+  body.classList.add("is-scrolling");
+
+  timerScroll = setTimeout(function () {
+    body.classList.remove("is-scrolling");
+  }, 100);
+});
+
 const defilement = gsap.to(".bi-chevron-double-down", {
   y: "30%",
   duration: 0.75,
