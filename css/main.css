@@ -9,8 +9,10 @@ body {
 }
 
 :root {
-  --title: rgb(81, 176, 239);
+  --title: rgb(60, 149, 209);
   --credits: rgb(0, 0, 0);
+  --backgroundsection: rgba(166, 144, 136, 0.747);
+  --histoire: rgb(255, 255, 255);
 }
 
 header {
@@ -93,8 +95,9 @@ section {
 
 .ixy_pierre {
   position: absolute;
-  left: 33vw;
-  top: 820vh;
+  left: 31vw;
+  top: 810vh;
+  transform: rotate(5deg);
 }
 
 .ixy_chateau {
@@ -108,6 +111,29 @@ section {
   width: 100px;
   left: 57vw;
   top: 845vh;
+}
+
+.feuille {
+  width: 70vw;
+  position: absolute;
+  top: 400vh;
+  left: 50vw;
+}
+
+.racine {
+  position: absolute;
+  width: 80vw;
+  right: -13vw;
+  top: 905vh;
+  transform: rotate(30deg);
+}
+
+.racine_opposee {
+  position: absolute;
+  width: 80vw;
+  left: -7vw;
+  top: 870vh;
+  transform: rotate(15deg);
 }
 
 .ixy_surpris {
@@ -291,6 +317,7 @@ img {
   position: absolute;
   color: var(--title);
   text-align: center;
+  z-index: 2;
 }
 
 .chapitre5 h1 {
@@ -307,32 +334,72 @@ img {
   text-align: center;
 }
 
+#fin h1 {
+  position: absolute;
+  font-size: 16vw;
+  top: 1650vh;
+  color: var(--title);
+}
+
 #chapitre1 p {
   position: absolute;
-  color: red;
+  color: var(--histoire);
 }
 
 #chapitre2 p {
   position: absolute;
-  color: blue;
+  color: var(--histoire);
 }
 
 #chapitre3 p {
   position: absolute;
-  color: blue;
+  color: var(--histoire);
 }
 
 #chapitre4 p {
   position: absolute;
-  color: blue;
+  color: var(--histoire);
 }
 
 #chapitre5 p {
   position: absolute;
-  color: blue;
+  color: var(--histoire);
 }
 
 #chapitre6 p {
   position: absolute;
-  color: blue;
+  color: var(--histoire);
+}
+
+section p {
+  position: absolute;
+  max-width: 50vw;
+  padding: 1vw;
+  left: 3vw;
+  background-color: var(--backgroundsection);
+  border-radius: 10px;
+}
+
+.spritesheet01 {
+  width: 90vw;
+  aspect-ratio: 1/1;
+  background-image: url(../images/png/spritesheet-fantome-ciel.png);
+  background-repeat: no-repeat;
+  animation-name: marche;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(39);
+}
+
+@keyframes marche {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 3500px 0;
+  }
+}
+
+.spritesheet01 {
+  margin: 0 auto;
 }
