@@ -1,12 +1,12 @@
 gsap.registerPlugin(ScrollTrigger);
 
 let body = document.querySelector("body");
-let timerScroll;
+let timeScroller;
 
 window.addEventListener("scroll", function () {
   body.classList.add("is-scrolling");
 
-  timerScroll = setTimeout(function () {
+  timeScroller = setTimeout(function () {
     body.classList.remove("is-scrolling");
   }, 100);
 });

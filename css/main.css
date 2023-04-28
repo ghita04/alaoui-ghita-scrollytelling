@@ -418,10 +418,11 @@ section p {
 
 .spritesheet01 {
   position: absolute;
-  width: 300px;
+  width: 500px;
+  height: 500px;
   background-image: url("../images/png/spritesheet-fantome-foret.png");
   animation-name: ixy_qui_marche;
-  animation-duration: 10s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: steps(39);
   animation-play-state: paused;
@@ -446,7 +447,7 @@ section p {
   width: 300px;
   background-image: url("../images/png/spritesheet-fantome-ciel.png");
   animation-name: ixy_qui_vole;
-  animation-duration: 10s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: steps(39);
   animation-play-state: paused;
