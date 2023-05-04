@@ -31,9 +31,9 @@ const roche = document.querySelector(".roche");
 
 roche.addEventListener("click", () => {
   gsap.to(".roche", {
-    scaleX: "200%",
-    scaleY: "200%",
-    duration: 1,
+    scaleX: "250%",
+    scaleY: "250%",
+    duration: 2,
     ease: "power1.inOut",
   });
 });
@@ -46,6 +46,13 @@ const racinedroite = gsap.to(".racine", 10, {
 const racinegauche = gsap.to(".racine_opposee", 10, {
   scrollTrigger: ".racine_opposee",
   opacity: -0,
+});
+
+const vent = gsap.to(".feuille_svg", {
+  motionPath: {
+    path: "#Calque_4",
+  },
+  duration: 70,
 });
 
 gsap
