@@ -55,6 +55,24 @@ const vent = gsap.to(".feuille_svg", {
   duration: 70,
 });
 
+gsap.to(".cls-1", {
+  scrollTrigger: {
+    trigger: ".chapitre1",
+    scrub: 0.5,
+    start: "top top",
+    end: "+=300%",
+  },
+  ease: "none",
+  drawSVG: "75% 75%",
+});
+
+gsap.to(".feuille_orange_04", {
+  motionPath: "#courbe",
+  duration: 4,
+  repeat: -1,
+  yoyo: true,
+});
+
 gsap
   .timeline()
   .from(".homme_qui_tombe", { y: "-500%", duration: 3 })
@@ -62,5 +80,5 @@ gsap
 
 gsap
   .timeline()
-  .to(".ixy_fin", { y: "-200%", duration: 3 })
+  .to(".ixy_fin", { y: "-80%", duration: 3 })
   .from(".motdefin", { x: "100%", duration: 3 });

@@ -218,7 +218,7 @@ img {
 }
 
 #chapitre2 {
-  background-image: url(../images/svg/ixy_promene_paysage3.svg);
+  background-image: url(../images/svg/paysage3.svg);
   height: 130vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -253,7 +253,7 @@ img {
 }
 
 #chapitre6 {
-  background-image: url(../images/svg/paysage_paradis_ixy_loin.svg);
+  background-image: url(../images/svg/paysage_paradis.svg);
   height: 130vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -445,10 +445,16 @@ body.is-scrolling .ixy_qui_marche {
   animation-play-state: running;
 }
 
+.ixy_qui_marche {
+  width: 10vw;
+}
+
 .spritesheet02 {
   position: absolute;
   width: 503.5px;
   height: 502px;
+  top: 1600vh;
+  left: 32vw;
   background-image: url("../images/png/spritesheet-fantome-ciel.png");
   background-repeat: repeat-x;
   background-size: cover;
@@ -458,11 +464,11 @@ body.is-scrolling .ixy_qui_marche {
 
 @keyframes ixy_qui_vole {
   from {
-    background-position: -16110px 0;
+    background-position: 0 0;
   }
 
   to {
-    background-position: 0 0;
+    background-position: 18110px 0;
   }
 }
 
