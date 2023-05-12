@@ -6,6 +6,7 @@ body {
   overflow-x: hidden;
   font-family: "Sriracha", cursive;
   margin: 0;
+  background-color: black;
 }
 
 :root {
@@ -13,6 +14,8 @@ body {
   --credits: rgb(0, 0, 0);
   --backgroundsection: rgba(166, 144, 136, 0.747);
   --histoire: rgb(255, 255, 255);
+  --path: rgb(240, 240, 186);
+  --trajet: orange;
 }
 
 header {
@@ -72,14 +75,12 @@ section {
   position: absolute;
   top: 150vh;
   right: 100px;
-  border: solid 1px blue;
 }
 
 .ixy_vole {
   position: absolute;
   width: 250px;
   transform: rotate(20deg);
-  border: solid 1px blue;
 }
 
 .ixy_feuille {
@@ -94,7 +95,7 @@ section {
   position: absolute;
   left: 31vw;
   transform: rotate(5deg);
-  top: 420vh;
+  top: 540vh;
 }
 
 .ixy_chateau {
@@ -104,17 +105,15 @@ section {
 
 .roche {
   position: absolute;
-  top: 450vh;
+  top: 570vh;
   width: 100px;
   left: 57vw;
-  border: solid 1px blue;
 }
 
 .feuille {
   width: 70vw;
   position: absolute;
   left: 50vw;
-  border: solid 1px blue;
   top: 200vh;
 }
 
@@ -123,7 +122,6 @@ section {
   width: 80vw;
   right: -13vw;
   transform: rotate(30deg);
-  border: solid 1px blue;
 }
 
 .racine_opposee {
@@ -131,7 +129,6 @@ section {
   width: 80vw;
   left: -7vw;
   transform: rotate(15deg);
-  border: solid 1px blue;
 }
 
 .racine02 {
@@ -177,12 +174,12 @@ section {
   position: absolute;
   width: 10vw;
   left: 40vw;
-  top: 590vh;
+  top: 710vh;
 }
 
 .ixy_tresor {
   position: absolute;
-  top: 638vh;
+  top: 758vh;
 }
 
 .ixy_paradis {
@@ -194,7 +191,6 @@ section {
 .ixy_fin {
   position: absolute;
   width: 300px;
-  border: solid 1px blue;
 }
 img {
   margin: 0;
@@ -208,7 +204,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 60% 100%;
-  border: solid 1px red;
+  border: solid 1px rgb(0, 0, 0);
 }
 
 #chapitre2 {
@@ -217,7 +213,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 100%;
-  border: solid 1px red;
+  border: solid 1px rgb(0, 0, 0);
 }
 
 #chapitre3 {
@@ -226,7 +222,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 100%;
-  border: solid 1px red;
+  border: solid 1px rgb(0, 0, 0);
 }
 
 #chapitre4 {
@@ -235,7 +231,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 100%;
-  border: solid 1px red;
+  border: solid 1px rgb(0, 0, 0);
 }
 
 #chapitre1 p {
@@ -268,7 +264,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 100%;
-  border: solid 1px red;
+  border: solid 1px rgb(0, 0, 0);
 }
 
 #chapitre6 {
@@ -277,7 +273,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 100%;
-  border: solid 1px red;
+  border: solid 1px rgb(0, 0, 0);
 }
 
 #fin {
@@ -294,7 +290,6 @@ img {
   position: absolute;
   font-size: 16vw;
   color: var(--title);
-  border: solid 1px blue;
 }
 
 #chapitre1 p {
@@ -345,6 +340,11 @@ img {
 #chapitre4 h2 {
   font-size: 3vw;
   padding-left: 3vw;
+}
+
+#chapitre4 .spritesheet01 {
+  position: absolute;
+  top: 687vh;
 }
 
 #chapitre5 h2 {
@@ -403,6 +403,7 @@ body.is-scrolling .ixy_qui_marche {
   width: 503.5px;
   height: 502px;
   left: 32vw;
+  top: 945vh;
   background-image: url("../images/png/spritesheet-fantome-ciel.png");
   background-repeat: repeat-x;
   background-size: cover;
@@ -414,12 +415,196 @@ body.is-scrolling .ixy_qui_marche {
   from {
     background-position: 0 0;
   }
-
   to {
-    background-position: -18110px 0;
+    background-position: 16458px 0;
   }
 }
 
 body.is-scrolling .ixy_qui_vole {
   animation-play-state: running;
+}
+
+#section-parallax {
+  background-image: url("../images/svg/feuille_vole.svg");
+  background-size: 100%; /* ou cover */
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 50% 50%;
+}
+
+section#section-parallax {
+  display: block;
+  height: 120vh;
+}
+#section-parallax > .inner {
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.scrolly-texte {
+  color: white;
+  font-size: 10vmin;
+  mix-blend-mode: lighten;
+}
+
+#template,
+#path {
+  fill: none;
+  position: absolute;
+  left: 30vw;
+}
+#template {
+  stroke-width: 15px;
+  stroke: var(--trajet);
+}
+#path {
+  stroke: var(--path);
+  stroke-width: 20px;
+
+  stroke-dashoffset: 0.001;
+  stroke-dasharray: 0px, 999999px;
+}
+
+ul.technique-gsap {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 10px;
+  font-family: monospace;
+  font-weight: 400;
+  width: auto;
+  display: inline-block;
+  padding: 10px 20px 12px 20px;
+  margin: 0;
+  max-width: 300px;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+
+ul.technique-gsap li {
+  margin: 5px 0;
+}
+
+#chapitre2 ul.technique-gsap {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 10px;
+  font-family: monospace;
+  font-weight: 400;
+  width: auto;
+  display: inline-block;
+  padding: 5px;
+  margin: 0;
+  max-width: 300px;
+  position: absolute;
+  z-index: 1000;
+  top: 230vh;
+  left: 90vw;
+}
+
+#chapitre2 ul.technique-gsap li {
+  margin: 5px 0;
+}
+
+#chapitre3 ul.technique-gsap {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 10px;
+  font-family: monospace;
+  font-weight: 400;
+  width: auto;
+  display: inline-block;
+  padding: 5px;
+  margin: 0;
+  max-width: 300px;
+  position: absolute;
+  z-index: 1000;
+  top: 480vh;
+  left: 90vw;
+}
+
+#chapitre3 ul.technique-gsap li {
+  margin: 5px 0;
+}
+
+#chapitre4 ul.technique-gsap {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 10px;
+  font-family: monospace;
+  font-weight: 400;
+  width: auto;
+  display: inline-block;
+  padding: 5px;
+  margin: 0;
+  max-width: 300px;
+  position: absolute;
+  z-index: 1000;
+  top: 610vh;
+  left: 90vw;
+}
+
+#chapitre4 ul.technique-gsap li {
+  margin: 5px 0;
+}
+
+#chapitre5 ul.technique-gsap {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 10px;
+  font-family: monospace;
+  font-weight: 400;
+  width: auto;
+  display: inline-block;
+  padding: 5px;
+  margin: 0;
+  max-width: 300px;
+  position: absolute;
+  z-index: 1000;
+  top: 740vh;
+  left: 90vw;
+}
+
+#chapitre5 ul.technique-gsap li {
+  margin: 5px 0;
+}
+
+#chapitre6 ul.technique-gsap {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 10px;
+  font-family: monospace;
+  font-weight: 400;
+  width: auto;
+  display: inline-block;
+  padding: 5px;
+  margin: 0;
+  max-width: 300px;
+  position: absolute;
+  z-index: 1000;
+  top: 870.5vh;
+  left: 90vw;
+}
+
+#chapitre6 ul.technique-gsap li {
+  margin: 5px 0;
+}
+
+.morph {
+  margin-left: 800px;
+  margin-top: -420px;
+  z-index: 3;
+}
+
+#star {
+  visibility: hidden;
+}
+
+#slider {
+  width: 420px;
+  margin: 20px auto;
 }

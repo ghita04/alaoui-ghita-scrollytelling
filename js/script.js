@@ -2,7 +2,8 @@
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MotionPathPlugin);
-//gsap.registerPlugin(DrawSVGPlugin);
+gsap.registerPlugin(DrawSVGPlugin);
+gsap.registerPlugin(MorphSVGPlugin);
 
 /* ---- Pré-requis pour la spritesheet ---- */
 
@@ -32,7 +33,6 @@ const defilement = gsap.to(".bi-chevron-double-down", {
 gsap
   .timeline({
     scrollTrigger: {
-      markers: true,
       trigger: "#chapitre1",
       toggleActions: "restart complete reverse reset",
       scrub: true,
@@ -40,13 +40,12 @@ gsap
   })
 
   .from(".homme_qui_tombe", { y: "-200%", duration: 3 })
-  .from(".ixy_vole", { x: "-900%", duration: 0.01 });
+  .from(".ixy_vole", { x: "250%", duration: 3 });
 
 /* ---- Animation des feuilles tombantes chapitre 2 ---- */
 
 gsap.to(".feuille", {
   scrollTrigger: {
-    markers: true,
     trigger: "#chapitre2",
     toggleActions: "restart complete reverse reset",
     scrub: true,
@@ -73,7 +72,6 @@ roche.addEventListener("click", () => {
 
 gsap.to(".racine", {
   scrollTrigger: {
-    markers: true,
     trigger: "#chapitre4",
     toggleActions: "restart complete reverse reset",
     scrub: true,
@@ -84,7 +82,6 @@ gsap.to(".racine", {
 
 gsap.to(".racine_opposee", {
   scrollTrigger: {
-    markers: true,
     trigger: "#chapitre4",
     toggleActions: "restart complete reverse reset",
     scrub: true,
@@ -103,8 +100,7 @@ gsap.to(".feuille_svg", {
   scrollTrigger: {
     start: 0,
     end: 1,
-    duration: 4,
-    repeat: -1,
+    duration: 10,
     yoyo: true,
   },
 });
@@ -114,25 +110,87 @@ gsap.to(".feuille_svg", {
 gsap
   .timeline({
     scrollTrigger: {
-      markers: true,
       trigger: "#fin",
       toggleActions: "restart complete reverse reset",
     },
   })
 
-  .to(".ixy_fin", { y: "-80%", duration: 3 })
+  .to(".ixy_fin", { y: "30%", duration: 3 })
   .from(".motdefin", { x: "100%", duration: 3 });
 
 /* ---- Animation des Spritesheets ---- */
 
 gsap.to(".spritesheet01", {
   scrollTrigger: {
-    pin: true,
-    markers: true,
     trigger: "#chapitre2",
     toggleActions: "restart complete reverse reset",
+  },
+  x: "50%",
+  duration: 10,
+});
+
+gsap.to(".spritesheet01", {
+  scrollTrigger: {
+    trigger: "#chapitre4",
+    toggleActions: "restart complete reverse reset",
+  },
+  x: "50%",
+  duration: 10,
+});
+
+/* ---- Parallaxe ---- */
+
+gsap.to("#section-parallax", {
+  backgroundSize: "200%",
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#section-parallax",
+    start: "top bottom",
+    end: "bottom top",
+    scrub: 0.5,
+  },
+});
+gsap.to(".scrolly-texte", {
+  xPercent: 200,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#section-parallax",
+    start: "top bottom",
+    end: "bottom top",
     scrub: true,
   },
-  x: "300%",
-  duration: 4,
+});
+
+/* ---- Draw dans le parallaxe ---- */
+
+gsap.to(".path", {
+  scrollTrigger: {
+    trigger: "#section-parallax",
+    start: "top center",
+    end: "top 400px",
+    scrub: true,
+  },
+  drawSVG: "0% 100%",
+});
+
+/* ---- Morphing ---- */
+
+let anim = gsap.to("#circle", {
+  scrollTrigger: {
+    trigger: "#chapitre5",
+    toggleActions: "restart complete reverse reset",
+  },
+  morphSVG: "#star",
+  duration: 6,
+  repeat: -1,
+});
+
+gsap.to(".morph", {
+  scrollTrigger: {
+    trigger: "#chapitre5",
+    toggleActions: "restart",
+  },
+  y: "-50%",
+  duration: 10,
+  repeat: -1,
 });
