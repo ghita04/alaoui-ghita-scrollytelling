@@ -17,6 +17,10 @@ body {
   --path: rgb(240, 240, 186);
   --trajet: orange;
 }
+@font-face {
+  font-family: Sriracha;
+  src: url("../images/Sriracha-Regular.ttf");
+}
 
 header {
   display: flex;
