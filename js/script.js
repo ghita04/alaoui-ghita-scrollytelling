@@ -3,7 +3,7 @@
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MotionPathPlugin);
 //gsap.registerPlugin(DrawSVGPlugin);
-//gsap.registerPlugin(MorphSVGPlugin);
+gsap.registerPlugin(MorphSVGPlugin);
 
 /* ---- Pré-requis pour la spritesheet ---- */
 
@@ -176,7 +176,7 @@ gsap.to(".scrolly-texte", {
 
 /* ---- Morphing ---- */
 
-/*let anim = gsap.to("#circle", {
+let anim = gsap.to("#circle", {
   scrollTrigger: {
     trigger: "#chapitre5",
     toggleActions: "restart complete reverse reset",
@@ -194,4 +194,4 @@ gsap.to(".morph", {
   y: "-50%",
   duration: 10,
   repeat: -1,
-});*/
+});
