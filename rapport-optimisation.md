@@ -1,5 +1,5 @@
 # Rapport d'optimisation du projet Scrollytelling
-[page speed insights - Rapport du 11 mai 2023, 23:29:51](https://pagespeed.web.dev/analysis/https-ghita04-github-io-alaoui-ghita-scrollytelling/lhln2dsso3?form_factor=desktop) à 99% de performance
+[Page Speed Insights - Rapport du 11 mai 2023, 23:29:51](https://pagespeed.web.dev/analysis/https-ghita04-github-io-alaoui-ghita-scrollytelling/lhln2dsso3?form_factor=desktop) à 99% de performance
 
 ## Problème 1 :
 La police Google Font
@@ -13,3 +13,5 @@ Supprimer les lignes de code qui ont été importés de la police Google. Ensuit
 
 Résultat :
 La police a été remplacée.
+
+[Page Speed Insights - Rapport du 11 mai 2023, 23:57:14](https://pagespeed.web.dev/analysis/https-ghita04-github-io-alaoui-ghita-scrollytelling/lhln2dsso3?
