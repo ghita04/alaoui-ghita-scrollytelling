@@ -172,7 +172,7 @@ gsap.to(".path", {
   },
   drawSVG: "0% 100%",
 });
-*/
+
 
 /* ---- Morphing ---- */
 
@@ -194,4 +194,4 @@ gsap.to(".morph", {
   y: "-50%",
   duration: 10,
   repeat: -1,
-});*/
+});
