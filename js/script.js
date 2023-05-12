@@ -163,7 +163,7 @@ gsap.to(".scrolly-texte", {
 
 /* ---- Draw dans le parallaxe ---- */
 
-/*gsap.to(".path", {
+gsap.to(".path", {
   scrollTrigger: {
     trigger: "#section-parallax",
     start: "top center",
@@ -176,7 +176,7 @@ gsap.to(".scrolly-texte", {
 
 /* ---- Morphing ---- */
 
-/*let anim = gsap.to("#circle", {
+let anim = gsap.to("#circle", {
   scrollTrigger: {
     trigger: "#chapitre5",
     toggleActions: "restart complete reverse reset",
